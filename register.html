@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Brodigy Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Navbar -->
+    <nav id="navbar">
+
+        <ul>
+
+           <li><a href="index.html#home">Home</a></li>
+            <li><a href="#membership">Membership</a></li>
+            
+
+        </ul>
+
+    </nav>
+
+    <!-- Membership Introduction -->
+<section class="panel banner right" id="membership">
+
+    <div class="content color0 span-7">
+
+        <h1 class="major">Membership Application</h1>
+
+        <p>
+            Thank you for your interest in joining Brodigy. Membership is reserved for ambitious, purpose-driven men committed to growth, leadership, integrity, and meaningful brodahood.
+        </p>
+
+        <p>
+            Complete the application in a few simple steps.
+        </p>
+
+        <ul class="actions">
+            <li>
+                <a href="#application1" class="button primary color1">
+                    Begin Application
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="image filtered span-1-75">
+        <img src="images/blogo.jpeg" alt="">
+    </div>
+
+</section>
+
+<!-- STEP 1 -->
+<section class="panel color1" id="application1">
+
+    <div class="intro joined">
+        <h2 class="major">Step 1</h2>
+        <p>Personal Information</p>
+    </div>
+
+    <div class="inner">
+
+        <form name="membership" method="POST" data-netlify="true">
+
+            <input type="hidden" name="form-name" value="membership">
+
+            <div class="fields">
+
+                <div class="field half">
+                    <label>Full Name</label>
+                    <input type="text" name="fullname" required>
+                </div>
+
+                <div class="field half">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="field half">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" required>
+                </div>
+
+                <div class="field half">
+    <label>Date of Birth</label>
+    <input type="text" name="dob" placeholder="DD / MM / YYYY">
+</div>
+
+                <div class="field half">
+                    <label>Occupation</label>
+                    <input type="text" name="occupation">
+                </div>
+
+                <div class="field half">
+                    <label>Location</label>
+                    <input type="text" name="location">
+                </div>
+
+            </div>
+
+            <ul class="actions">
+                <li>
+                    <a href="#application2" class="button primary color2">
+                        Next →
+                    </a>
+                </li>
+            </ul>
+
+    </div>
+
+</section>
+
+<!-- STEP 2 -->
+<section class="panel color4" id="application2">
+
+    <div class="intro joined">
+        <h2 class="major">Step 2</h2>
+        <p>Tell Us About Yourself</p>
+    </div>
+
+    <div class="inner">
+
+            <div class="fields">
+
+                <div class="field">
+    <label>LinkedIn / Social Media Profile</label>
+    <input type="text" name="social" placeholder="https://linkedin.com/in/username or @username">
+</div>
+
+                <div class="field">
+                    <label>Why do you want to join Brodigy?</label>
+                    <textarea name="purpose" rows="4"></textarea>
+                </div>
+
+                <div class="field">
+                    <label>What value can you contribute to the brodahood?</label>
+                    <textarea name="value" rows="4"></textarea>
+                </div>
+
+                <div class="field">
+                    <label>What are your personal or professional goals?</label>
+                    <textarea name="goals" rows="4"></textarea>
+                </div>
+
+            </div>
+
+            <ul class="actions">
+
+                <li>
+                    <a href="#application1" class="button">
+                        ← Previous
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#application3" class="button primary color1">
+                        Next →
+                    </a>
+                </li>
+
+            </ul>
+
+    </div>
+
+</section>
+
+<!-- STEP 3 -->
+<!-- STEP 3 -->
+<section class="panel color1" id="application3">
+
+    <div class="intro joined">
+        <h2 class="major">Step 3</h2>
+        <p>Emergency Contact Person (ECP)</p>
+    </div>
+
+    <div class="inner">
+
+        <div class="fields">
+
+            <div class="field">
+                <p>
+                    <strong>
+                        Please provide the details of a trusted person we can contact in the event of an emergency while you are participating in Brodigy meetings, events, or activities.
+                    </strong>
+                </p>
+            </div>
+
+            <div class="field half">
+                <label>Full Name</label>
+                <input type="text" name="emergency_name" required>
+            </div>
+
+            <div class="field half">
+                <label>Relationship</label>
+                <input type="text" name="relationship" placeholder="Blood Brother, Parent, Friend, Spouse..." required>
+            </div>
+
+            <div class="field half">
+                <label>Email Address</label>
+                <input type="email" name="emergency_email">
+            </div>
+
+            <div class="field half">
+                <label>Phone Number</label>
+                <input type="tel" name="emergency_phone" required>
+            </div>
+
+        </div>
+
+        <ul class="actions">
+
+            <li>
+                <a href="#application2" class="button">
+                    ← Previous
+                </a>
+            </li>
+
+            <li>
+                <a href="#application4" class="button primary color1">
+                    Next →
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- STEP 4 -->
+<section class="panel color4" id="application4">
+
+    <div class="intro joined">
+        <h2 class="major">Step 4</h2>
+        <p>Identification & Declaration</p>
+    </div>
+
+    <div class="inner">
+
+        <div class="fields">
+
+            <div class="field">
+                <p>
+                    <strong>
+                        Please provide a valid means of identification for verification purposes. Your information will be handled confidentially.
+                    </strong>
+                </p>
+            </div>
+
+            <div class="field half">
+
+                <label>Means of Identification</label>
+
+                <div class="select-wrapper">
+                    <select name="id_type" required>
+
+                        <option value="">Select One</option>
+
+                        <option value="nin">
+                            National Identification Number (NIN)
+                        </option>
+
+                        <option value="voters">
+                            Voter's Card
+                        </option>
+
+                        <option value="passport">
+                            International Passport
+                        </option>
+
+                        <option value="drivers">
+                            Driver's License
+                        </option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="field half">
+                <label>ID Number</label>
+                <input type="text" name="id_number" required>
+            </div>
+
+            <div class="field">
+
+                <input
+                    type="checkbox"
+                    id="agree"
+                    name="agreement"
+                    required>
+
+                <label for="agree">
+                    I certify that the information provided in this application is true and accurate. I understand that membership is subject to review and approval by Brodigy, and I agree to uphold the values, principles, and code of conduct of the Brodahood.
+                </label>
+
+            </div>
+
+        </div>
+
+        <ul class="actions">
+
+            <li>
+                <a href="#application3" class="button">
+                    ← Previous
+                </a>
+            </li>
+
+            <li>
+                <input
+                    type="submit"
+                    value="Submit Application"
+                    class="button primary color1">
+            </li>
+
+        </ul>
+
+        </form>
+
+    </div>
+
+</section>
+
+           
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
+```
