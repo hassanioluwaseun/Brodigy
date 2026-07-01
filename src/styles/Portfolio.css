@@ -1,0 +1,483 @@
+/* ===================================================
+                PORTFOLIO PAGE
+=================================================== */
+
+.portfolio-page{
+    width:100vw;
+    height:100vh;
+    background:#000;
+    color:#fff;
+    overflow:hidden;
+    position:relative;
+}
+
+/* ===================================================
+                MAIN GRID
+=================================================== */
+
+.portfolio-grid{
+    width:100%;
+    height:100%;
+
+    display:grid;
+
+    grid-template-columns:34% 66%;
+    grid-template-rows:48% 52%;
+}
+
+/* ===================================================
+                LOGO
+=================================================== */
+
+.portfolio-logo{
+
+    background:linear-gradient(
+        160deg,
+        #000000 0%,
+        #3f290b 45%,
+        #000000 100%
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.portfolio-logo img{
+
+    width:72%;
+    max-width:300px;
+
+    object-fit:contain;
+
+    filter:brightness(1.15);
+}
+
+/* ===================================================
+                INTRO
+=================================================== */
+
+.portfolio-intro{
+
+    background:#000;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:100px 70px 60px;
+}
+
+.portfolio-intro h1{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.portfolio-line{
+
+    width:80px;
+    height:3px;
+
+    background:#777;
+
+    margin-bottom:30px;
+}
+
+.portfolio-intro p{
+
+    max-width:760px;
+
+    color:#d5d5d5;
+
+    font-size:1.1rem;
+
+    line-height:2;
+}
+
+/* ===================================================
+                BOTTOM SECTION
+=================================================== */
+
+.portfolio-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2px;
+
+    background:#111;
+}
+
+/* ===================================================
+                SMALL CARDS
+=================================================== */
+
+.small-card{
+
+    position:relative;
+
+    background-size:cover;
+    background-position:center;
+
+    min-height:300px;
+
+    overflow:hidden;
+
+    transition:.4s;
+}
+
+.small-card:hover{
+
+    transform:scale(1.03);
+}
+
+.small-card::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        rgba(88, 75, 2, 0.1),
+        rgba(110, 73, 48, 0.55)
+    );
+}
+
+.card-overlay{
+
+    position:absolute;
+
+    left:25px;
+    right:25px;
+    bottom:25px;
+
+    z-index:2;
+}
+
+.card-overlay h3{
+
+    font-size:1.4rem;
+
+    margin-bottom:10px;
+}
+
+.card-overlay p{
+
+    color:#ddd;
+
+    line-height:1.6;
+
+    font-size:.95rem;
+}
+
+/* ===================================================
+                FEATURE IMAGE
+=================================================== */
+
+.portfolio-feature{
+
+    position:relative;
+
+    background-size:cover;
+    background-position:center;
+
+    overflow:hidden;
+}
+
+.portfolio-feature::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        rgba(46, 48, 71, 0.05),
+        rgba(110, 73, 48, 0.55)
+    );
+}
+
+.portfolio-feature .card-overlay{
+
+    bottom:35px;
+}
+
+.portfolio-feature h3{
+
+    font-size:2rem;
+}
+
+/* ===================================================
+                NEXT BUTTON
+=================================================== */
+
+.next-page-btn{
+
+    position:absolute;
+
+    right:35px;
+    bottom:35px;
+
+    z-index:100;
+}
+
+/* ===================================================
+                MOBILE
+=================================================== */
+
+@media(max-width:991px){
+
+.portfolio-page{
+
+    overflow-y:auto;
+}
+
+.portfolio-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:auto;
+}
+
+.portfolio-logo{
+
+    height:300px;
+}
+
+.portfolio-logo img{
+
+    width:180px;
+}
+
+.portfolio-intro{
+
+    padding:120px 30px 50px;
+}
+
+.portfolio-intro h1{
+
+    font-size:2.5rem;
+}
+
+.portfolio-intro p{
+
+    font-size:1rem;
+
+    line-height:1.8;
+}
+
+.portfolio-cards{
+
+    grid-template-columns:1fr;
+}
+
+.small-card{
+
+    min-height:240px;
+}
+
+.portfolio-feature{
+
+    min-height:350px;
+}
+
+.portfolio-feature h3{
+
+    font-size:1.6rem;
+}
+
+.next-page-btn{
+
+    position:fixed;
+
+    right:20px;
+    bottom:20px;
+}
+
+}
+/* ===========================================
+                NOK PAGE
+=========================================== */
+
+.nok-page{
+    width:100vw;
+    height:100vh;
+    background:#000;
+    color:#fff;
+
+    display:flex;
+    flex-direction:column;
+
+    overflow:hidden;
+}
+
+/* ==============================
+        TOP SECTION
+============================== */
+
+.nok-page .portfolio-grid{
+
+    width:100%;
+    height:360px;
+
+    display:grid;
+    grid-template-columns:34% 66%;
+
+    flex-shrink:0;
+
+    margin-top:95px;
+}
+
+/* ==============================
+        LEFT IMAGE
+============================== */
+
+.nok-page .portfolio-logo{
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* ==============================
+        RIGHT CONTENT
+============================== */
+
+.nok-page .portfolio-intro{
+
+    background:#000;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:40px 70px;
+}
+
+.nok-page .portfolio-intro h1{
+
+    color:#fff;
+
+    font-size:3.3rem;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+    margin-bottom:18px;
+}
+
+.nok-page .portfolio-line{
+
+    width:80px;
+    height:3px;
+
+    background:#fff;
+
+    margin-bottom:28px;
+}
+
+.nok-page .portfolio-intro p{
+
+    color:#e5e5e5;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    max-width:760px;
+}
+
+/* ==============================
+      FULL WIDTH IMAGE
+============================== */
+
+.nok-bottom-image{
+
+    width:100%;
+
+    flex:1;
+
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+/* ==============================
+      NEXT BUTTON
+============================== */
+
+.nok-page .next-page-btn{
+
+    position:absolute;
+
+    right:35px;
+    bottom:35px;
+
+    z-index:20;
+}
+
+/* ==============================
+          MOBILE
+============================== */
+
+@media(max-width:991px){
+
+.nok-page{
+
+    height:auto;
+
+    overflow-y:auto;
+}
+
+.nok-page .portfolio-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:auto;
+
+    margin-top:90px;
+}
+
+.nok-page .portfolio-logo{
+
+    height:280px;
+}
+
+.nok-page .portfolio-intro{
+
+    padding:40px 25px;
+}
+
+.nok-page .portfolio-intro h1{
+
+    font-size:2.2rem;
+}
+
+.nok-page .portfolio-intro p{
+
+    font-size:1rem;
+
+    line-height:1.8;
+}
+
+.nok-bottom-image{
+
+    height:320px;
+
+    flex:none;
+}
+
+}

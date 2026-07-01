@@ -1,0 +1,142 @@
+/* ==========================================
+        REGISTRATION PAGE (SAFE VERSION)
+========================================== */
+
+.reg-page{
+    width:100%;
+    min-height:100vh;
+    background:#000;
+    color:#fff;
+
+    /* SAFE spacing ONLY inside page */
+    padding:80px 20px 60px;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    box-sizing:border-box;
+}
+
+/* HEADER */
+.reg-header{
+    text-align:center;
+    max-width:700px;
+    margin-bottom:40px;
+}
+
+.reg-header span{
+    color:#FDBB2D;
+    letter-spacing:3px;
+    font-size:.9rem;
+}
+
+.reg-header h1{
+    font-size:3rem;
+    margin:10px 0;
+}
+
+.reg-header p{
+    color:#ccc;
+    line-height:1.6;
+}
+
+/* STEP INDICATOR */
+.step-indicator{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.step-indicator div{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border:1px solid #333;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#aaa;
+}
+
+.step-indicator .active{
+    background:#FDBB2D;
+    color:#000;
+}
+
+/* FORM */
+.reg-form{
+    width:100%;
+    max-width:600px;
+}
+
+.form-step{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    background:#111;
+    padding:25px;
+    border-radius:20px;
+}
+
+.form-step h2{
+    margin-bottom:10px;
+}
+
+/* ==========================================
+    🔥 IMPORTANT FIX: SCOPED INPUT STYLES
+========================================== */
+
+.reg-page input,
+.reg-page textarea,
+.reg-page select{
+    width:100%;
+    padding:12px;
+
+    border-radius:10px;
+    border:1px solid #333;
+    background:#000;
+    color:#fff;
+
+    box-sizing:border-box;
+}
+
+/* ==========================================
+    🔥 IMPORTANT FIX: SCOPED BUTTON ONLY
+========================================== */
+
+.reg-page button{
+    padding:12px 20px;
+    border:none;
+    border-radius:30px;
+
+    background:#FDBB2D;
+    color:#000;
+
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.reg-page button:hover{
+    background:#fff;
+}
+
+/* BUTTON ROW */
+.btn-row{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+}
+
+/* CHECKBOX */
+.checkbox{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    font-size:.9rem;
+    color:#ccc;
+}

@@ -1,0 +1,387 @@
+/* ==========================================
+                CONTACT PAGE
+========================================== */
+
+.contact-page{
+    width:100%;
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(167,120,63,.25),
+    transparent 45%),
+
+    radial-gradient(circle at bottom left,
+    rgba(85,42,36,.28),
+    transparent 40%),
+
+    #050505;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:120px 60px 60px;
+}
+
+/* ==========================================
+            MAIN CONTAINER
+========================================== */
+
+.contact-container{
+
+    width:100%;
+    max-width:1350px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1px 340px;
+
+    gap:55px;
+
+    align-items:start;
+}
+
+/* ==========================================
+            LEFT SIDE
+========================================== */
+
+.contact-left{
+    width:100%;
+}
+
+.contact-form{
+    width:100%;
+}
+
+/* ==========================================
+            ROW
+========================================== */
+
+.contact-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:26px;
+
+    margin-bottom:28px;
+}
+
+/* ==========================================
+            LABELS
+========================================== */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.input-group label{
+
+    margin-bottom:12px;
+
+    color:#fff;
+
+    font-size:.95rem;
+
+    font-weight:600;
+}
+
+/* ==========================================
+            INPUTS
+========================================== */
+
+.input-group input{
+
+    width:100%;
+
+    height:52px;
+
+    background:transparent;
+
+    border:2px solid rgba(255,255,255,.22);
+
+    border-radius:4px;
+
+    color:#fff;
+
+    padding:0 18px;
+
+    font-size:1rem;
+
+    transition:.35s;
+}
+
+.input-group input:focus{
+
+    outline:none;
+
+    border-color:#ffffff;
+
+    box-shadow:0 0 18px rgba(255,255,255,.12);
+}
+
+/* ==========================================
+            MESSAGE
+========================================== */
+
+.message-group{
+
+    margin-bottom:30px;
+}
+
+.message-group textarea{
+
+    width:100%;
+
+    min-height:220px;
+
+    resize:none;
+
+    background:transparent;
+
+    border:2px solid rgba(255,255,255,.22);
+
+    border-radius:4px;
+
+    color:#fff;
+
+    padding:18px;
+
+    font-size:1rem;
+
+    transition:.35s;
+}
+
+.message-group textarea:focus{
+
+    outline:none;
+
+    border-color:#ffffff;
+
+    box-shadow:0 0 18px rgba(255,255,255,.12);
+}
+
+/* ==========================================
+            BUTTON
+========================================== */
+
+.contact-btn{
+
+    width:200px;
+
+    height:52px;
+
+    background:#fff;
+
+    color:#111;
+
+    border:none;
+
+    border-radius:4px;
+
+    letter-spacing:4px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.contact-btn:hover{
+
+    background:#FDBB2D;
+
+    color:#000;
+
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+            DIVIDER
+========================================== */
+
+.contact-divider{
+
+    width:1px;
+
+    background:rgba(255,255,255,.22);
+
+    align-self:stretch;
+}
+
+/* ==========================================
+            RIGHT SIDE
+========================================== */
+
+.contact-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+}
+
+/* ==========================================
+            SOCIAL ITEM
+========================================== */
+
+.social-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    text-decoration:none;
+
+    color:#cfcfcf;
+
+    transition:.3s;
+}
+
+.social-item:hover{
+
+    color:#FDBB2D;
+
+    transform:translateX(6px);
+}
+
+/* ==========================================
+            ICON
+========================================== */
+
+.social-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#6d5b9c;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.2rem;
+
+    flex-shrink:0;
+
+    transition:.35s;
+}
+
+.social-item:hover .social-icon{
+
+    background:#FDBB2D;
+
+    color:#111;
+
+    transform:rotate(10deg);
+}
+
+/* ==========================================
+            TEXT
+========================================== */
+
+.social-item span{
+
+    font-size:1.08rem;
+
+    font-weight:400;
+}
+
+/* ==========================================
+            MOBILE
+========================================== */
+
+@media(max-width:991px){
+
+.contact-page{
+
+    padding:100px 25px 50px;
+
+    align-items:flex-start;
+}
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+}
+
+.contact-divider{
+
+    display:none;
+}
+
+.contact-row{
+
+    grid-template-columns:1fr;
+
+    gap:22px;
+}
+
+.contact-btn{
+
+    width:100%;
+}
+
+.contact-right{
+
+    gap:20px;
+
+    padding-bottom:30px;
+}
+
+.social-item span{
+
+    font-size:1rem;
+}
+
+.message-group textarea{
+
+    min-height:180px;
+}
+
+}
+
+.contact-success {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(99, 213, 255, 0.1);
+  border: 1px solid rgba(99, 213, 255, 0.3);
+  color: #63d5ff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

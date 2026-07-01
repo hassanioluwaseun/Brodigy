@@ -1,0 +1,123 @@
+/* ===========================
+        ADMIN LAYOUT
+=========================== */
+
+.admin-layout{
+    display:flex;
+    width:100%;
+    min-height:100vh;
+    background:#f8fafc;
+}
+
+/* ===========================
+          SIDEBAR
+=========================== */
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:270px;
+    height:100vh;
+
+    background:#0f172a;
+
+    transition:.3s ease;
+
+    z-index:1000;
+
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    border-right:1px solid rgba(255,255,255,.05);
+
+}
+
+.sidebar.collapsed{
+
+    width:90px;
+
+}
+
+/* ===========================
+        CONTENT
+=========================== */
+
+.admin-content{
+
+    margin-left:270px;
+
+    width:calc(100% - 270px);
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.3s ease;
+
+}
+
+.admin-content.sidebar-collapsed{
+
+    margin-left:90px;
+
+    width:calc(100% - 90px);
+
+}
+
+/* ===========================
+          MAIN
+=========================== */
+
+.admin-main{
+
+    flex:1;
+
+    padding:35px;
+
+    overflow-y:auto;
+
+}
+
+/* ===========================
+        MOBILE
+=========================== */
+
+@media(max-width:992px){
+
+.sidebar{
+
+transform:translateX(-100%);
+
+}
+
+.sidebar.mobile-open{
+
+transform:translateX(0);
+
+}
+
+.admin-content{
+
+margin-left:0;
+
+width:100%;
+
+}
+
+.admin-content.sidebar-collapsed{
+
+margin-left:0;
+
+width:100%;
+
+}
+
+}
