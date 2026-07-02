@@ -1,5 +1,5 @@
 import aboutImage from "../assets/men16.png";
-import "../styles/about.css";
+import "../styles/About.css";
 
 
 
